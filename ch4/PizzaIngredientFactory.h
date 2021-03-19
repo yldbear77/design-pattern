@@ -16,12 +16,29 @@ public:
 };
 
 class NYPizzaIngredientFactory : public PizzaIngredientFactory {
-public:
-	Dough createDough() { }
-	Sauce createSauce() { }
-	Cheese createCheese() { }
-	Pepperoni createPepperoni() {}
-	Clams createClam() {}
+	Dough createDough() {
+		
+	}
+
+	Sauce createSauce() {
+
+	}
+
+	Cheese createCheese() {
+
+	}
+
+	std::vector<Veggies*> createVeggies() {
+
+	}
+
+	Pepperoni createPepperoni() {
+
+	}
+
+	Clams createClam() {
+
+	}
 };
 
 #endif

@@ -1,22 +1,17 @@
 #ifndef __PIZZA_H__
 #define __PIZZA_H__
 
+#include "Pizza.h"
+#include "PizzaIngredientFactory.h"
+#include "Ingredient.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
 
 class Pizza {
 public:
-	virtual void prepare() {
-		std::cout << "Preparing: " << name << '\n';
-		std::cout << "Tossing dough ...\n";
-		std::cout << "Adding sauce ...\n";
-		std::cout << "Adding toppings: ";
-		for (const auto& t : toppings) {
-			std::cout << t << " ";
-		}
-		std::cout << '\n';
-	}
+	virtual void prepare() = 0;
 
 	virtual void bake() {
 		std::cout << "Bake for 25 minutes at 350\n";
@@ -30,39 +25,56 @@ public:
 		std::cout << "Place pizza in official PizzaStore box\n";
 	}
 
+	void setName(std::string name) {
+		mName = name;
+	}
+
 	std::string getName() {
-		return name;
+		return mName;
 	}
 
 protected:
-	std::string name;
-	std::string dough;
-	std::string sauce;
-	std::vector<std::string> toppings;
+	std::string mName;
+
+	Dough mDough;
+	Sauce mSauce;
+	std::vector<Veggies*> mVeggies;
+	Cheese mCheese;
+	Pepperoni mPepperoni;
+	Clams mClam;
 };
 
-class NYStyleCheesePizza : public Pizza {
+class CheesePizza : public Pizza {
 public:
-	NYStyleCheesePizza() {
-		name = "NY Style Sauce and Cheese Pizza";
-		dough = "Thin Crust Dough";
-		sauce = "Marinara Sauce";
-		toppings.push_back("Grated Reggiano Cheese");
+	CheesePizza(PizzaIngredientFactory* ingredientFactory) : 
+		mIngredientFactory(ingredientFactory) {}
+
+	void prepare() {
+		std::cout << "Preparing " << mName << '\n';
+		mDough = mIngredientFactory->createDough();
+		mSauce = mIngredientFactory->createSauce();
+		mCheese = mIngredientFactory->createCheese();
 	}
+
+private:
+	PizzaIngredientFactory* mIngredientFactory;
 };
 
-class ChicagoStyleCheesePizza : public Pizza {
+class ClamPizza : public Pizza {
 public:
-	ChicagoStyleCheesePizza() {
-		name = "Chicago Style Deep Dish Cheese Pizza";
-		dough = "Extra Thick Crust Dough";
-		sauce = "Plum Tomato Sauce";
-		toppings.push_back("Shredded Mozzarella Cheese");
+	ClamPizza(PizzaIngredientFactory* ingredientFactory) :
+		mIngredientFactory(ingredientFactory) {}
+
+	void prepare() {
+		std::cout << "Preparing " << mName << '\n';
+		mDough = mIngredientFactory->createDough();
+		mSauce = mIngredientFactory->createSauce();
+		mCheese = mIngredientFactory->createCheese();
+		mClam = mIngredientFactory->createClam();
 	}
 
-	virtual void cut() {
-		std::cout << "Cutting the pizza into square slices\n";
-	}
+private:
+	PizzaIngredientFactory* mIngredientFactory;
 };
 
 #endif

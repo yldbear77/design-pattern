@@ -2,6 +2,7 @@
 #define __PIZZA_STORE_H__
 
 #include "Pizza.h"
+#include "PizzaIngredientFactory.h"
 
 #include <string>
 
@@ -25,16 +26,34 @@ public:
 class NYPizzaStore : public PizzaStore {
 public:
 	Pizza* createPizza(std::string type) {
-		if (type == "cheese") return new NYStyleCheesePizza;
-		else return nullptr;
+		Pizza* pizza = nullptr;
+		PizzaIngredientFactory* ingredientFactory = new NYPizzaIngredientFactory;
+
+		if (type == "cheese") {
+			pizza = new CheesePizza(ingredientFactory);
+			pizza->setName("New York Style Cheese Pizza");
+		}
+		else if (type == "veggie") {
+			//pizza = new VeggiePizza(ingredientFactory);
+			pizza->setName("New York Style Veggie Pizza");
+		}
+		else if (type == "clam") {
+			pizza = new ClamPizza(ingredientFactory);
+			pizza->setName("New York Style Clam Pizza");
+		}
+		else if (type == "pepperoni") {
+			//pizza = new PepperoniPizza(ingredientFactory);
+			pizza->setName("New York Style Pepperoni Pizza");
+		}
+
+		return pizza;
 	}
 };
 
 class ChicagoPizzaStore : public PizzaStore {
 public:
 	Pizza* createPizza(std::string type) {
-		if (type == "cheese") return new ChicagoStyleCheesePizza;
-		else return nullptr;
+
 	}
 };
 

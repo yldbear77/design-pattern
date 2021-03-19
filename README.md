@@ -1,0 +1,1 @@
+* Smart Pointer 사용하도록 추후 수정
