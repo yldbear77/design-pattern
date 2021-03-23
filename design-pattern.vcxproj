@@ -148,13 +148,14 @@
     <ClCompile Include="ch3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch4\main.cpp" />
+    <ClCompile Include="ch6\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch4\Ingredient.h" />
-    <ClInclude Include="ch4\Pizza.h" />
-    <ClInclude Include="ch4\PizzaIngredientFactory.h" />
-    <ClInclude Include="ch4\PizzaStore.h" />
+    <ClInclude Include="ch6\Command.h" />
+    <ClInclude Include="ch6\GarageDoor.h" />
+    <ClInclude Include="ch6\Light.h" />
+    <ClInclude Include="ch6\RemoteControl.h" />
+    <ClInclude Include="ch6\Stereo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
