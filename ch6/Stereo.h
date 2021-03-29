@@ -5,6 +5,8 @@
 
 class Stereo {
 public:
+	Stereo(std::string name) : mName(name) {}
+
 	void on() {
 		std::cout << "Stereo is On\n";
 	}
@@ -16,6 +18,9 @@ public:
 	void setVolume(int v) {
 		std::cout << "Stereo's volume is " << v << '\n';
 	}
+
+private:
+	std::string mName;
 };
 
 #endif

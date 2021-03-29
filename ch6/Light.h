@@ -5,13 +5,18 @@
 
 class Light {
 public:
+	Light(std::string name) : mName(name) {}
+
 	void on() {
-		std::cout << "Light is On\n";
+		std::cout << mName << " light is on\n";
 	}
 
 	void off() {
-		std::cout << "Light is Off\n";
+		std::cout << mName << " light is off\n";
 	}
+
+private:
+	std::string mName;
 };
 
 #endif

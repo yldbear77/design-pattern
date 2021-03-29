@@ -21,6 +21,10 @@ public:
 		mOffCommands[slot] = offCmd;
 	}
 
+	void setCommand(int slot, Command* onCmd) {
+		mOnCommands[slot] = onCmd;
+	}
+
 	void onButtonWasPressed(int slot) {
 		mOnCommands[slot]->execute();
 	}

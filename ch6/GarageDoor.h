@@ -5,13 +5,18 @@
 
 class GarageDoor {
 public:
+	GarageDoor(std::string name) : mName(name) {}
+
 	void open() { 
-		std::cout << "Garage door is Open\n";
+		std::cout << mName << " garage door is open\n";
 	}
 
 	void close() {
-		std::cout << "Garage door is Closed\n";
+		std::cout << mName << " garage door is closed\n";
 	}
+
+private:
+	std::string mName;
 };
 
 #endif
