@@ -14,6 +14,7 @@ public:
 			mOnCommands.push_back(noCommand);
 			mOffCommands.push_back(noCommand);
 		}
+		undoCommand = noCommand;
 	}
 
 	void setCommand(int slot, Command* onCmd, Command* offCmd) {
@@ -27,10 +28,16 @@ public:
 
 	void onButtonWasPressed(int slot) {
 		mOnCommands[slot]->execute();
+		undoCommand = mOnCommands[slot];
 	}
 
 	void offButtonWasPressed(int slot) {
 		mOffCommands[slot]->execute();
+		undoCommand = mOffCommands[slot];
+	}
+
+	void undoButtonWasPressed() {
+		undoCommand->undo();
 	}
 
 	void status() {
@@ -44,6 +51,7 @@ public:
 private:
 	std::vector<Command*> mOnCommands;
 	std::vector<Command*> mOffCommands;
+	Command* undoCommand;
 };
 
 #endif

@@ -37,8 +37,9 @@ int main(void) {
 	remote->offButtonWasPressed(1);
 	remote->onButtonWasPressed(2);
 	remote->offButtonWasPressed(2);
-	remote->onButtonWasPressed(3);
-	remote->offButtonWasPressed(3);
+	//remote->onButtonWasPressed(3);
+	//remote->offButtonWasPressed(3);
+	remote->undoButtonWasPressed();
 
 	remote->status();
 
