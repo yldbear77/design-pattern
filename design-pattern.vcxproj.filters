@@ -44,5 +44,8 @@
     <ClInclude Include="ch6\RemoteControl.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="ch6\CeilingFan.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

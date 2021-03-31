@@ -4,6 +4,7 @@
 #include "Light.h"
 #include "GarageDoor.h"
 #include "Stereo.h"
+#include "CeilingFan.h"
 
 class Command {
 public:
@@ -73,6 +74,69 @@ public:
 
 private:
 	Stereo* mStereo;
+};
+
+class CeilingFanHighCommand : public Command {
+public:
+	CeilingFanHighCommand(CeilingFan* ceilingFan) { mCeilingFan = ceilingFan; }
+
+	void execute() {
+		prevSpeed = mCeilingFan->getSpeed();
+		mCeilingFan->high(); 
+	}
+
+	void undo() {
+		if (prevSpeed == CeilingFan::HIGH) mCeilingFan->high();
+		else if (prevSpeed == CeilingFan::MEDIUM) mCeilingFan->medium();
+		else if (prevSpeed == CeilingFan::LOW) mCeilingFan->low();
+		else if (prevSpeed == CeilingFan::OFF) mCeilingFan->off();
+	}
+
+private:
+	CeilingFan* mCeilingFan;
+	int prevSpeed;
+};
+
+class CeilingFanMediumCommand : public Command {
+public:
+	CeilingFanMediumCommand(CeilingFan* ceilingFan) { mCeilingFan = ceilingFan; }
+
+	void execute() {
+		prevSpeed = mCeilingFan->getSpeed();
+		mCeilingFan->medium();
+	}
+
+	void undo() {
+		if (prevSpeed == CeilingFan::HIGH) mCeilingFan->high();
+		else if (prevSpeed == CeilingFan::MEDIUM) mCeilingFan->medium();
+		else if (prevSpeed == CeilingFan::LOW) mCeilingFan->low();
+		else if (prevSpeed == CeilingFan::OFF) mCeilingFan->off();
+	}
+
+private:
+	CeilingFan* mCeilingFan;
+	int prevSpeed;
+};
+
+class CeilingFanOffCommand : public Command {
+public:
+	CeilingFanOffCommand(CeilingFan* ceilingFan) { mCeilingFan = ceilingFan; }
+
+	void execute() {
+		prevSpeed = mCeilingFan->getSpeed();
+		mCeilingFan->off();
+	}
+
+	void undo() {
+		if (prevSpeed == CeilingFan::HIGH) mCeilingFan->high();
+		else if (prevSpeed == CeilingFan::MEDIUM) mCeilingFan->medium();
+		else if (prevSpeed == CeilingFan::LOW) mCeilingFan->low();
+		else if (prevSpeed == CeilingFan::OFF) mCeilingFan->off();
+	}
+
+private:
+	CeilingFan* mCeilingFan;
+	int prevSpeed;
 };
 
 #endif

@@ -151,6 +151,7 @@
     <ClCompile Include="ch6\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ch6\CeilingFan.h" />
     <ClInclude Include="ch6\Command.h" />
     <ClInclude Include="ch6\GarageDoor.h" />
     <ClInclude Include="ch6\Light.h" />

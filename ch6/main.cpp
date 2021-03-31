@@ -9,6 +9,7 @@
 using namespace std;
 
 int main(void) {
+	/*
 	Light* livingRoomLight = new Light("Living Room");
 	LightOnCommand* livingRoomLightOn = new LightOnCommand(livingRoomLight);
 	LightOffCommand* livingRoomLightOff = new LightOffCommand(livingRoomLight);
@@ -42,6 +43,27 @@ int main(void) {
 	remote->undoButtonWasPressed();
 
 	remote->status();
+	*/
+
+	CeilingFan* ceilingFan = new CeilingFan("Living Room");
+
+	CeilingFanHighCommand* ceilingFanHigh = new CeilingFanHighCommand(ceilingFan);
+	CeilingFanMediumCommand* ceilingFanMedium = new CeilingFanMediumCommand(ceilingFan);
+	CeilingFanOffCommand* ceilingFanOff = new CeilingFanOffCommand(ceilingFan);
+
+	RemoteControl* remote = new RemoteControl;
+
+	remote->setCommand(0, ceilingFanMedium, ceilingFanOff);
+	remote->setCommand(1, ceilingFanHigh, ceilingFanOff);
+
+	remote->onButtonWasPressed(0);
+	remote->offButtonWasPressed(0);
+	remote->undoButtonWasPressed();
+
+	cout << "--------------------------------\n";
+
+	remote->onButtonWasPressed(1);
+	remote->undoButtonWasPressed();
 
 	return 0;
 }
