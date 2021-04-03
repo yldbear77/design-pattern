@@ -148,15 +148,17 @@
     <ClCompile Include="ch3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch6\main.cpp" />
+    <ClCompile Include="ch7\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch6\CeilingFan.h" />
-    <ClInclude Include="ch6\Command.h" />
-    <ClInclude Include="ch6\GarageDoor.h" />
-    <ClInclude Include="ch6\Light.h" />
-    <ClInclude Include="ch6\RemoteControl.h" />
-    <ClInclude Include="ch6\Stereo.h" />
+    <ClInclude Include="ch7\Amplifier.h" />
+    <ClInclude Include="ch7\HomeTheaterFacade.h" />
+    <ClInclude Include="ch7\PopcornPopper.h" />
+    <ClInclude Include="ch7\Projector.h" />
+    <ClInclude Include="ch7\Screen.h" />
+    <ClInclude Include="ch7\StreamingPlayer.h" />
+    <ClInclude Include="ch7\TheaterLights.h" />
+    <ClInclude Include="ch7\Tuner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
