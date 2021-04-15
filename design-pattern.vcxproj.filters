@@ -15,42 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch1.cpp">
+    <ClCompile Include="ch1\ch1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch2.cpp">
+    <ClCompile Include="ch2\ch2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch3.cpp">
+    <ClCompile Include="ch3\ch3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch7\main.cpp">
+    <ClCompile Include="ch8\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch7\HomeTheaterFacade.h">
+    <ClInclude Include="ch8\CaffeineBeverage.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch7\Amplifier.h">
+    <ClInclude Include="ch8\Tea.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch7\Tuner.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch7\StreamingPlayer.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch7\Projector.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch7\TheaterLights.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch7\Screen.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch7\PopcornPopper.h">
+    <ClInclude Include="ch8\Coffee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

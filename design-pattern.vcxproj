@@ -139,26 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ch1.cpp">
+    <ClCompile Include="ch1\ch1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch2.cpp">
+    <ClCompile Include="ch2\ch2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch3.cpp">
+    <ClCompile Include="ch3\ch3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch7\main.cpp" />
+    <ClCompile Include="ch8\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch7\Amplifier.h" />
-    <ClInclude Include="ch7\HomeTheaterFacade.h" />
-    <ClInclude Include="ch7\PopcornPopper.h" />
-    <ClInclude Include="ch7\Projector.h" />
-    <ClInclude Include="ch7\Screen.h" />
-    <ClInclude Include="ch7\StreamingPlayer.h" />
-    <ClInclude Include="ch7\TheaterLights.h" />
-    <ClInclude Include="ch7\Tuner.h" />
+    <ClInclude Include="ch8\CaffeineBeverage.h" />
+    <ClInclude Include="ch8\Coffee.h" />
+    <ClInclude Include="ch8\Tea.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
