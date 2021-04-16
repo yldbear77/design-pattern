@@ -148,12 +148,18 @@
     <ClCompile Include="ch3\ch3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch8\main.cpp" />
+    <ClCompile Include="ch9\DinerMenu.cpp" />
+    <ClCompile Include="ch9\DinerMenuIterator.cpp" />
+    <ClCompile Include="ch9\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch8\CaffeineBeverage.h" />
-    <ClInclude Include="ch8\Coffee.h" />
-    <ClInclude Include="ch8\Tea.h" />
+    <ClInclude Include="ch9\DinerMenu.h" />
+    <ClInclude Include="ch9\DinerMenuIterator.h" />
+    <ClInclude Include="ch9\Iterator.h" />
+    <ClInclude Include="ch9\MenuItem.h" />
+    <ClInclude Include="ch9\PancakeHouseMenu.h" />
+    <ClInclude Include="ch9\PancakeHouseMenuIterator.h" />
+    <ClInclude Include="ch9\Waitress.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

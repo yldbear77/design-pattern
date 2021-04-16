@@ -24,18 +24,36 @@
     <ClCompile Include="ch3\ch3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch8\main.cpp">
+    <ClCompile Include="ch9\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch9\DinerMenuIterator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch9\DinerMenu.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch8\CaffeineBeverage.h">
+    <ClInclude Include="ch9\Iterator.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch8\Tea.h">
+    <ClInclude Include="ch9\DinerMenuIterator.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch8\Coffee.h">
+    <ClInclude Include="ch9\MenuItem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ch9\DinerMenu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ch9\PancakeHouseMenu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ch9\PancakeHouseMenuIterator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ch9\Waitress.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
