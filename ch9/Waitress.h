@@ -2,31 +2,28 @@
 #define __WAITRESS_H__
 
 #include <iostream>
+#include <vector>
 
 #include "PancakeHouseMenu.h"
 #include "DinerMenu.h"
+#include "CafeMenu.h"
 #include "Iterator.h"
 
 class Waitress {
 public:
-	Waitress(Menu* pancakeHouseMenu, Menu* dinerMenu) {
-		this->pancakeHouseMenu = pancakeHouseMenu;
-		this->dinerMenu = dinerMenu;
+	Waitress(std::vector<Menu*> menus) {
+		this->menus = menus;
 	}
 
 	void PrintMenu() {
-		Iterator* pancakeIterator = pancakeHouseMenu->CreateIterator();
-		Iterator* dinerIterator = dinerMenu->CreateIterator();
-
-		std::cout << "MENU\n----\nBREAKFAST\n";
-		PrintMenu(pancakeIterator);
-		std::cout << "\nLUNCH\n";
-		PrintMenu(dinerIterator);
+		for (auto& m : menus) {
+			Iterator* it = m->CreateIterator();
+			PrintMenu(it);
+		}
 	}
 
 private:
-	Menu* pancakeHouseMenu;
-	Menu* dinerMenu;
+	std::vector<Menu*> menus;
 
 	void PrintMenu(Iterator* it) {
 		while (it->HasNext()) {
@@ -35,6 +32,7 @@ private:
 			std::cout << menuItem.GetPrice() << " -- ";
 			std::cout << menuItem.GetDescription() << '\n';
 		}
+		std::cout << '\n';
 	}
 };
 

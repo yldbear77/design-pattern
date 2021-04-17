@@ -59,5 +59,11 @@
     <ClInclude Include="ch9\Menu.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="ch9\CafeMenu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ch9\CafeMenuIterator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

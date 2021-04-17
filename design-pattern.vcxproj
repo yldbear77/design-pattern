@@ -153,6 +153,8 @@
     <ClCompile Include="ch9\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ch9\CafeMenu.h" />
+    <ClInclude Include="ch9\CafeMenuIterator.h" />
     <ClInclude Include="ch9\DinerMenu.h" />
     <ClInclude Include="ch9\DinerMenuIterator.h" />
     <ClInclude Include="ch9\Iterator.h" />
