@@ -9,7 +9,7 @@
 
 class Waitress {
 public:
-	Waitress(PancakeHouseMenu* pancakeHouseMenu, DinerMenu* dinerMenu) {
+	Waitress(Menu* pancakeHouseMenu, Menu* dinerMenu) {
 		this->pancakeHouseMenu = pancakeHouseMenu;
 		this->dinerMenu = dinerMenu;
 	}
