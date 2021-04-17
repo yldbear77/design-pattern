@@ -1,4 +1,4 @@
-//#include "DinerMenu.h"
+#include "DinerMenu.h"
 #include "PancakeHouseMenu.h"
 #include "Waitress.h"
 
