@@ -5,11 +5,12 @@
 #include <array>
 #include <string>
 
+#include "Menu.h"
 #include "Iterator.h"
 #include "MenuItem.h"
 #include "DinerMenuIterator.h"
 
-class DinerMenu {
+class DinerMenu : public Menu {
 public:
 	static const int MAX_ITEMS = 6;
 	//enum { MAX_ITEMS = 6 };

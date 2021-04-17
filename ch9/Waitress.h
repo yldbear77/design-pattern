@@ -25,8 +25,8 @@ public:
 	}
 
 private:
-	PancakeHouseMenu* pancakeHouseMenu;
-	DinerMenu* dinerMenu;
+	Menu* pancakeHouseMenu;
+	Menu* dinerMenu;
 
 	void PrintMenu(Iterator* it) {
 		while (it->HasNext()) {

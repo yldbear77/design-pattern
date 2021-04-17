@@ -4,11 +4,12 @@
 #include <vector>
 #include <string>
 
+#include "Menu.h"
 #include "Iterator.h"
 #include "MenuItem.h"
 #include "PancakeHouseMenuIterator.h"
 
-class PancakeHouseMenu {
+class PancakeHouseMenu : public Menu {
 public:
 	PancakeHouseMenu() {
 		addItem("K&B's Pancake Breakfast",

@@ -156,6 +156,7 @@
     <ClInclude Include="ch9\DinerMenu.h" />
     <ClInclude Include="ch9\DinerMenuIterator.h" />
     <ClInclude Include="ch9\Iterator.h" />
+    <ClInclude Include="ch9\Menu.h" />
     <ClInclude Include="ch9\MenuItem.h" />
     <ClInclude Include="ch9\PancakeHouseMenu.h" />
     <ClInclude Include="ch9\PancakeHouseMenuIterator.h" />
