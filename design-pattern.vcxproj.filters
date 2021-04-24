@@ -24,45 +24,33 @@
     <ClCompile Include="ch3\ch3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch9\main.cpp">
+    <ClCompile Include="ch10\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch9\DinerMenuIterator.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch9\DinerMenu.cpp">
+    <ClCompile Include="ch10\GumballMachine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch9\Iterator.h">
+    <ClInclude Include="ch10\GumballMachine.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch9\DinerMenuIterator.h">
+    <ClInclude Include="ch10\NoQuarterState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch9\MenuItem.h">
+    <ClInclude Include="ch10\State.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch9\DinerMenu.h">
+    <ClInclude Include="ch10\HasQuarterState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch9\PancakeHouseMenu.h">
+    <ClInclude Include="ch10\SoldState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch9\PancakeHouseMenuIterator.h">
+    <ClInclude Include="ch10\SoldOutState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch9\Waitress.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch9\Menu.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch9\CafeMenu.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch9\CafeMenuIterator.h">
+    <ClInclude Include="ch10\WinnerState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

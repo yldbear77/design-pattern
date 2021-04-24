@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ch10\GumballMachine.cpp" />
+    <ClCompile Include="ch10\main.cpp" />
     <ClCompile Include="ch1\ch1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -148,21 +150,15 @@
     <ClCompile Include="ch3\ch3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ch9\DinerMenu.cpp" />
-    <ClCompile Include="ch9\DinerMenuIterator.cpp" />
-    <ClCompile Include="ch9\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch9\CafeMenu.h" />
-    <ClInclude Include="ch9\CafeMenuIterator.h" />
-    <ClInclude Include="ch9\DinerMenu.h" />
-    <ClInclude Include="ch9\DinerMenuIterator.h" />
-    <ClInclude Include="ch9\Iterator.h" />
-    <ClInclude Include="ch9\Menu.h" />
-    <ClInclude Include="ch9\MenuItem.h" />
-    <ClInclude Include="ch9\PancakeHouseMenu.h" />
-    <ClInclude Include="ch9\PancakeHouseMenuIterator.h" />
-    <ClInclude Include="ch9\Waitress.h" />
+    <ClInclude Include="ch10\GumballMachine.h" />
+    <ClInclude Include="ch10\HasQuarterState.h" />
+    <ClInclude Include="ch10\NoQuarterState.h" />
+    <ClInclude Include="ch10\SoldOutState.h" />
+    <ClInclude Include="ch10\SoldState.h" />
+    <ClInclude Include="ch10\State.h" />
+    <ClInclude Include="ch10\WinnerState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
