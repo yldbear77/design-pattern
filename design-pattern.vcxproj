@@ -139,26 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ch10\GumballMachine.cpp" />
-    <ClCompile Include="ch10\main.cpp" />
-    <ClCompile Include="ch1\ch1.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ch2\ch2.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ch3\ch3.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="ch12\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch10\GumballMachine.h" />
-    <ClInclude Include="ch10\HasQuarterState.h" />
-    <ClInclude Include="ch10\NoQuarterState.h" />
-    <ClInclude Include="ch10\SoldOutState.h" />
-    <ClInclude Include="ch10\SoldState.h" />
-    <ClInclude Include="ch10\State.h" />
-    <ClInclude Include="ch10\WinnerState.h" />
+    <ClInclude Include="ch12\Duck.h" />
+    <ClInclude Include="ch12\Goose.h" />
+    <ClInclude Include="ch12\GooseAdapter.h" />
+    <ClInclude Include="ch12\Quackable.h" />
+    <ClInclude Include="ch12\QuackCounter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

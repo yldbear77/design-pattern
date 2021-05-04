@@ -15,42 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch1\ch1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch2\ch2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch3\ch3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch10\main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ch10\GumballMachine.cpp">
+    <ClCompile Include="ch12\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ch10\GumballMachine.h">
+    <ClInclude Include="ch12\Quackable.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch10\NoQuarterState.h">
+    <ClInclude Include="ch12\Duck.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch10\State.h">
+    <ClInclude Include="ch12\Goose.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch10\HasQuarterState.h">
+    <ClInclude Include="ch12\GooseAdapter.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ch10\SoldState.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch10\SoldOutState.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ch10\WinnerState.h">
+    <ClInclude Include="ch12\QuackCounter.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
